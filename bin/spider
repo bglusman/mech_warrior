@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/mech_warrior"
+
+puts "Host:"
+host = gets.chomp
+puts
+puts "Other options:"
+opts = gets.chomp
+opts_hash = eval("{" + opts + "}")
+puts opts_hash.to_json
+MechWarrior.crawl(opts_hash.merge(default_host: host))
