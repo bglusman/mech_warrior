@@ -33,10 +33,17 @@ Crawling a site
 ---------------
 
 ```sh
-bin/spider
+$ spider
+Host:
+www.example.com
+
+Other options:
+pool_size:          50,
+log_file_name:      my_log.txt
 ```
-and enter a host name, followed by any additional options you wish to pass in
-to override default options in `lib/mech_warrior.rb`
+
+If you want to crawl `www.example.com` followed by any additional options you wish to pass in
+to override default options in `lib/mech_warrior.rb` in the format above, or include them gem and use `MechWarrior.crawl(opts_hash)`
 
 
 Todo
