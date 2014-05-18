@@ -26,7 +26,7 @@ Installation
 --------------
 
 ```sh
-gem install mech_warrior-0.0.1.gem
+gem install mech_warrior
 ```
 
 Crawling a site
